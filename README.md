@@ -4,13 +4,13 @@
 
 ## 1. Material을 객체에 적용하기
 
-![Materials설정을 객체에 적용](C:\Users\multicampus\Desktop\github\Unity\Asset\Materials설정을 객체에 적용.PNG)
+![Materials설정을 객체에 적용](https://github.com/jaehyun0122/Unity/blob/master/Asset/Materials%EC%84%A4%EC%A0%95%EC%9D%84%20%EA%B0%9D%EC%B2%B4%EC%97%90%20%EC%A0%81%EC%9A%A9.PNG)
 
 
 
 ## 2. CharacterController
 
-![CharacterController_slope_step](C:\Users\multicampus\Desktop\github\Unity\Asset\CharacterController_slope_step.PNG)
+![CharacterController_slope_step](https://github.com/jaehyun0122/Unity/blob/master/Asset/CharacterController_slope_step.PNG)
 
 위 두가지 변수를 활용해 경사면이나 계단을 올라갈 때 특정값 초과는 이동 불가능하게 할 수 있다.
 
@@ -35,7 +35,7 @@
 
 
 
-![상태전이](C:\Users\multicampus\Desktop\github\Unity\Asset\상태전이.PNG)
+![상태전이](https://github.com/jaehyun0122/Unity/blob/master/Asset/%EC%83%81%ED%83%9C%EC%A0%84%EC%9D%B4.PNG)
 
 #### Parameters : 해당 Animator Controller에 귀속된 변수들
 
@@ -46,10 +46,10 @@
 - bool
 - Trigger : on/off (on 상태에서 1회 실행되면 자동으로 off됨)
 
-![conditions](C:\Users\multicampus\Desktop\github\Unity\Asset\conditions.PNG)
+![conditions](https://github.com/jaehyun0122/Unity/blob/master/Asset/conditions.PNG)
 => conditions설정을 통해 해당 값 greater or less로 값에 따라 전환
 
-![condition전이](C:\Users\multicampus\Desktop\github\Unity\Asset\condition전이.gif)
+![condition전이](https://github.com/jaehyun0122/Unity/blob/master/Asset/condition%EC%A0%84%EC%9D%B4.gif)
 
 
 
@@ -94,7 +94,7 @@ Hierachy에서 create3Dobject => Terrian
 
 
 
-![Move_Rotate_Jump_-_SampleScene_-_PC__Mac___Linux_Standalone_-_Unity_2020_3_33f1_Personal___DX11__2022-04-19_10-24-48_AdobeCreativeCloudExpress](C:\Users\multicampus\Downloads\Move_Rotate_Jump_-_SampleScene_-_PC__Mac___Linux_Standalone_-_Unity_2020_3_33f1_Personal___DX11__2022-04-19_10-24-48_AdobeCreativeCloudExpress.gif)
+![Move_Rotate_Jump_-_SampleScene_-_PC__Mac___Linux_Standalone_-_Unity_2020_3_33f1_Personal___DX11__2022-04-19_10-24-48_AdobeCreativeCloudExpress](https://github.com/jaehyun0122/Unity/blob/master/Asset/Move_Rotate_Jump_-_SampleScene_-_PC__Mac___Linux_Standalone_-_Unity_2020_3_33f1_Personal___DX11__2022-04-19_10-24-48_AdobeCreativeCloudExpress.gif)
 
 
 
