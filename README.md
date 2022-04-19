@@ -51,7 +51,54 @@
 
 ![condition전이](C:\Users\multicampus\Desktop\github\Unity\Asset\condition전이.gif)
 
-## 4. Animation Layer, Blend Tree
+
+
+## 4. Move
+
+1. Hierachy에서 3D객체를 만든다
+2. script를 객체에 추가
+
+```
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class MovePlayer : MonoBehaviour
+{
+    public float speed = 6.0f; // 움직임 속도
+    public float jumpSpeed = 8.0f; // 점프 속도
+    public float gravity = 20.0f; // 중력값
+    private Vector3 moveDirection = Vector3.zero; // 백터 객체에 초기값을 zero를 준다
+
+    // Update is called once per frame
+    void Update()
+    {
+        CharacterController controller = GetComponent<CharacterController>(); // 캐릭터 컨트롤러 객체를 만들어주고 컴포넌트를 가져온다
+
+        if (controller.isGrounded) // 바닦에 있을 시
+        {
+            moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0 , Input.GetAxis("Vertical")); // 움직임 방향
+            moveDirection = transform.TransformDirection(moveDirection);
+            if (Input.GetButton("Jump")) moveDirection.y = jumpSpeed; // 점프키 (space bar)를 누를 시
+        }
+
+        moveDirection.y -= gravity * Time.deltaTime; // 바닦에 없으면 y값에 중력과 시간을 곱한 값을 빼준다
+        controller.Move(moveDirection*Time.deltaTime); // player객체의 움직임 지시
+    }
+}
+```
+
+3. 그라운드를 만들어준다
+
+Hierachy에서 create3Dobject => Terrian
+
+
+
+![Move_Rotate_Jump_-_SampleScene_-_PC__Mac___Linux_Standalone_-_Unity_2020_3_33f1_Personal___DX11__2022-04-19_10-24-48_AdobeCreativeCloudExpress](C:\Users\multicampus\Downloads\Move_Rotate_Jump_-_SampleScene_-_PC__Mac___Linux_Standalone_-_Unity_2020_3_33f1_Personal___DX11__2022-04-19_10-24-48_AdobeCreativeCloudExpress.gif)
+
+
+
+## 5. Animation Layer, Blend Tree
 
 weight : 가중치를 설정해 합성하는 정도 선택
 
